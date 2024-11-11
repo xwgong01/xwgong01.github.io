@@ -2,24 +2,26 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
-
+subtitle: "<a href=https://astronomy.nju.edu.cn> School of Astronomy & Space Science, Nanjing University</a>"
 profile:
   align: right
-  image: prof_pic.jpg
+  image: myphoto.png
   image_circular: false # crops the image to make it circular
   more_info: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
+    <p>163 Xianlin Avenue, </p>
+    <p>Qixia District, Nanjing China</p>
 
 news: true # includes a list of news items
-selected_papers: true # includes a list of papers marked as "selected={true}"
-social: true # includes social icons at the bottom of the page
+selected_papers: false # includes a list of papers marked as "selected={true}"
+social: false # includes social icons at the bottom of the page
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
 
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+#### 
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+
+#### Educational Experience
+- **Bachelor of Science**, School of Astronomy and Space Science, **Nanjing University**, China, 09/2021 - 07/2025 (Expected)
+- **Visiting Research Student**, Department of Astronomy and Astrophysics, **Pennsylvania State University**, State College, PA, United States, 02/2024-06/2024
+- One semester of coursework in Business Engineering, Voluntarily withdrew, RWTH Aachen University, Aachen, Germany, 10/2020-05/2021
+- Senior High School, Shanghai Caoyang No. 2 High School, Shanghai, China, 09/2017-07/2017
