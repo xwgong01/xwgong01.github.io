@@ -1,81 +1,61 @@
 ---
 layout: page
-title: project 1
-description: with background image
-img: assets/img/12.jpg
-importance: 1
+title: Enhance LHAASO Resolution with Machine Learning
+description: De-convolution with neural networks!
+img: assets/img/1849.jpg
+importance: 3
 category: work
-related_publications: true
+related_publications: false
 ---
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
+Every instrument suffers from systematic error --- As a result, imaging power is limited by point spread function (PSF). It has been proven impossible to recover the original sky map from PSF blurring using mathematical methods. Will machine learning make a difference? 
 
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
+Super Resolution techniques have been widely applied in microscopy. They could go beyond the instrumental limit, help resolving the small structures of tiny structures like fibers. Inspired by this, we want to explore whether similar models could be applied in astronomical research. the Large High Altitude Air Shower Observatory (LHAASO) has measured extreme high energy gamma-ray photons, but its angular resolution is poor, many sources are unresolved. If machine learning can enhance the resolution, it could at least give some hints on the source morphology, which help researcher identify the cosmic ray acceleration site. 
 
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
+#### Training Data
+
+
+<!-- <div class="row"> -->
+<div class="d-flex justify-content-center">
+    <div class="col-12 col-md-6">
+        {% include figure.liquid loading="eager" path="assets/img/fermibkg.jpg" title="Fermi Diffuse Gamma-Ray Emission Model" class="img-fluid rounded z-depth-1" %}
+    </div> 
+</div>
+We start from a rather simple case. We first train the model to reconstruct PSF-blurred sky map with certain energy and declination, which means the PSF of LHAASO is accurately measured. Since the LHAASO data are not well studied, we choose dataset from Fermi LAT, an earlier gamma-ray observatory, as the intrinsic intensity map. The sky map is then convolved with the LHAASO PSF. On this dataset, we tested the ability of machine learning model to reconstruct sky maps blurred with certain PSF. 
+
+
+We then perform a 2d-convolution with the PSF function to the sky map, so that it looks smoothed and the small scale structure seems not distinguishable any more. 
+
+
 
 <div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+    <div class="col-3 col-md-3">
+        {% include figure.liquid loading="eager" path="assets/img/origbkg.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
     </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+    <div class="col-3 col-md-3">
+        {% include figure.liquid loading="eager" path="assets/img/blurbkg.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
     </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+    <div class="col-6 col-md-6">
+        {% include figure.liquid loading="eager" path="assets/img/poiselect.jpg" title="Fermi Diffuse Gamma-Ray Emission Model" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
-</div>
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    This image can also have a caption. It's like magic.
+    The sky map is cropped into many small areas (\(6.4 \times 6.4^\circ \)) (left), blurred with PSF (mid). The sky regions are selected with fibonacci laticce (right).
 </div>
 
-You can also put regular text between your rows of images, even citations {% cite einstein1950meaning %}.
-Say you wanted to write a bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, _bled_ for your project, and then... you reveal its glory in the next row of images.
+We have trained on different models, such as variational auto-encoder (VAE), convolutional neural network (CNN) and generative adversial network (GAN). It turns out that the simplest CNN has the best performance, which is due to the convolutional nature of CNN. We have applied the trained model to five LHAASO KM2A observations at 25 to 40 TeV. It turns out that the machine learning model can recover the strong poisson noise. Also, along the manually selected directions, the peak reconstructed by our model is narrower than the TS Map resulted from the traditional likelihood test. 
 
 <div class="row justify-content-sm-center">
     <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid path="assets/img/recon_lhaaso.png" title="reconstructed LHAASO observations" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
+    First row from left: counts map from observation (should be affected by PSF); Second row: TS map using 0.29 degree as smooth radius; Third Row: machine learning reconstructed intensity map; Rightmost: intensity curve along manually selected direction.
 </div>
 
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
+### Problems and The Future
 
-{% raw %}
+ In the real observation, PSF varies with energy and declination, which is a challenge for training a unified model for reconstructing the all sky map. Our treatment to the PSF blurring is also too ideal. 
 
-```html
-<div class="row justify-content-sm-center">
-  <div class="col-sm-8 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-  <div class="col-sm-4 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-</div>
-```
-
-{% endraw %}
+ We gave a poster presentation recently at the Second LHAASO Collaboration Conference recently in Chengdu, Sichuan. Now we are collaborating with researchers from IHEP. They will offer guidance of simulating LHAASO observation, and make sure our training data is close to the real observation. 
