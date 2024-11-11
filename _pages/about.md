@@ -8,20 +8,24 @@ profile:
   image: myphoto.png
   image_circular: false # crops the image to make it circular
   more_info: >
-    <p>163 Xianlin Avenue, </p>
-    <p>Qixia District, Nanjing China</p>
+    <p>At LHAASO site </p>
+    <p>Daocheng, Sichuan Province, China</p>
 
-news: true # includes a list of news items
+news: false # includes a list of news items
 selected_papers: false # includes a list of papers marked as "selected={true}"
 social: false # includes social icons at the bottom of the page
 ---
 
 
-#### 
+#### Research Interest
+
+I am now an undergraduate student in the fourth year. My research interests are in particle acceleration theories in plasma, their astrophysical application, and modeling with multi-messenger observations. These research topics may help answer the mystery of cosmic ray origin. 
+
+
 
 
 #### Educational Experience
-- **Bachelor of Science**, School of Astronomy and Space Science, **Nanjing University**, China, 09/2021 - 07/2025 (Expected)
-- **Visiting Research Student**, Department of Astronomy and Astrophysics, **Pennsylvania State University**, State College, PA, United States, 02/2024-06/2024
-- One semester of coursework in Business Engineering, Voluntarily withdrew, RWTH Aachen University, Aachen, Germany, 10/2020-05/2021
-- Senior High School, Shanghai Caoyang No. 2 High School, Shanghai, China, 09/2017-07/2017
+- **Bachelor of Science**, School of Astronomy and Space Science, **Nanjing University**, (Nanjing, China), 09/2021 - 07/2025 (Expected)
+- **Visiting Research Student**, Department of Astronomy and Astrophysics, **Pennsylvania State University**, (State College, PA), 02/2024-06/2024
+- One semester of coursework in Business Engineering, Voluntarily withdrew, RWTH Aachen University, (Aachen, Germany), 10/2020-05/2021
+- Senior High School, Shanghai Caoyang No. 2 High School, (Shanghai, China), 09/2017-07/2017

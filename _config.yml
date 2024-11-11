@@ -244,11 +244,12 @@ exclude:
   - lighthouse_results/
   - package.json
   - package-lock.json
-  - _pages/about_einstein.md
+#  - _pages/about_einstein.md
   - purgecss.config.js
   - README.md
   - readme_preview/
   - vendor
+  - bakpages/
 keep_files:
   - CNAME
   - .nojekyll
@@ -265,7 +266,7 @@ plugins:
   - jekyll-minifier
   - jekyll-paginate-v2
   - jekyll-regex-replace
-  - jekyll/scholar
+#  - jekyll/scholar
   - jekyll-sitemap
   - jekyll-tabs
   - jekyll-toc

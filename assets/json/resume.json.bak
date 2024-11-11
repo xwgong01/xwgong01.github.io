@@ -1,0 +1,102 @@
+{
+  "basics": {
+    "name": "Xingwei Gong",
+    "email": "201840319@smail.nju.edu.cn",
+    "phone 1": "+ 86 17821752730",
+    "phone 2": "+1 (814) 852-8595",
+    "url": "https://xwgong01.github.io",
+    "location": {
+      "address": "163 Xianlin Avenue, Qixia District",
+      "postalCode": "210023",
+      "city": "Nanjing",
+      "countryCode": "China"
+    }
+  },
+
+  "education": [
+    {
+      "institution": "Nanjing University",
+      "location": "Nanjing, China",
+      "url": "https://nju.edu.cn/",
+      "area": "Astronomy (Astrophysics)",
+      "studyType": "BS",
+      "startDate": "09/01/2021",
+      "endDate": "06/25/2025"
+    }
+  ],
+  "awards": [
+    {
+      "name": "People's Scholarship",
+      "prize": "1st Prize",
+      "date": "2022"
+    },
+    {
+      "name": "Elite Program Scholarship",
+      "prize": "2nd Prize",
+      "date": "2022"
+    }
+  ],
+  "certificates": [
+    {
+      "name": "Toefl iBT",
+      "date": "29/10/2023",
+      "scores": "R30, L28, S25, W28"
+    },
+    {
+      "name": "CET6",
+      "date": "1/5/2023",
+      "scores": "587"
+    }
+  ],
+  "publications": [],
+  "skills": [
+    {
+      "name": "Physics",
+      "level": "Master",
+      "icon": "fa-solid fa-hashtag",
+      "keywords": [
+        "Quantum Mechanics",
+        "Quantum Computing",
+        "Quantum Information",
+        "Quantum Cryptography",
+        "Quantum Communication",
+        "Quantum Teleportation"
+      ]
+    }
+  ],
+  "languages": [
+    {
+      "language": "German",
+      "fluency": "Native speaker",
+      "icon": ""
+    },
+    {
+      "language": "English",
+      "fluency": "Fluent",
+      "icon": ""
+    }
+  ],
+  "interests": [
+    {
+      "name": "Physics",
+      "icon": "fa-solid fa-tag",
+      "keywords": [
+        "Quantum Mechanics",
+        "Quantum Computing",
+        "Quantum Information",
+        "Quantum Cryptography",
+        "Quantum Communication",
+        "Quantum Teleportation"
+      ]
+    }
+  ],
+
+  "projects": [
+    {
+      "name": "GRB 221009A"
+    },
+    {
+      "name": "Machine Learning"
+    }
+  ]
+}

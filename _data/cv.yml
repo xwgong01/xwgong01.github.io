@@ -2,96 +2,96 @@
   type: map
   contents:
     - name: Full Name
-      value: Albert Einstein
-    - name: Date of Birth
-      value: 14th March 1879
-    - name: Languages
-      value: English, German
+      value: Xingwei Gong
+    - name: Pronouns
+      value: He/him
 
 - title: Education
   type: time_table
   contents:
-    - title: PhD
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1905
-      description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: Federal teaching diploma
-      institution: Eidgenössische Technische Hochschule, Zurich, Switzerland
-      year: 1900
-      description:
-        - Description 1.
-        - Description 2.
+    - title: Bachelor of Science
+      institution: Nanjing University, Nanjing, China
+      year: 2021-2025
+    - title: Visiting Research Student
+      institution: Department of Astronomy and Astrophysics, Pennsylvania State University, State College, PA
+      year: 02-06/2024
+      description: "<b>Supervisor</b>: Prof. Derek B. Fox"
 
-- title: Experience
+- title: Research Experience
   type: time_table
   contents:
-    - title: Professor of Theoretical Physics
-      institution: Institute for Advanced Study, Princeton University
-      year: 1933 - 1955
+    - title: Machine Learning 
+      institution: Nanjing University
+      year: 2022-2024
       description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: Visiting Professor
-      institution: California Institute of Technology, Pasadena, California, US
-      year: 1933
+        - "<b>Supervisors</b>:  Prof. Ruo-Yu Liu, Dr. Hai-Ming Zhang"
+
+    - title: Proposal 
+      institution: Pennsylvania State University
+      year: 2024
       description:
-        - Description 1.
-        - Description 2.
+        - "<b>Supervisor</b>: Prof. Derek B. Fox"
 
-    - title: Director
-      institution: Kaiser Wilhelm Institute for Physics, Berlin, Germany.
-      year: 1917-1933
-
-    - title: Professor of Theoretical Physics
-      institution: Karl-Ferdinand University, Prague, Czechoslovakia
-      year: 1911 - 1917
+    - title: IceCube Alerts Analysis
+      institution: Pennsylvania State University
+      year: 2024
       description:
+        - "<b>Supervisor</b>: Prof. Derek B. Fox"
 
-    - title: Associate Professor of Theoretical Physics
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1909 - 1911
-
-- title: Open Source Projects
-  type: time_table
-  contents:
-    - title: <a href="https://github.com/alshedivat/al-folio">al-folio</a>
-      year: 2015-now
-      description: A beautiful, simple, clean, and responsive Jekyll theme for academics.
+    - title: Stochastic Acceleration in GRB 221009A
+      institution: Nanjing University
+      year: 2023-2024
+      description:
+        - "<b>Supervisor</b>: Prof. Ruo-Yu Liu"
 
 - title: Honors and Awards
   type: time_table
   contents:
-    - year: 1921
+    - year: 2022
       items:
-        - Nobel Prize in Physics
-        - Matteucci Medal
-    - year: 2029
+        - People's Scholarship 2nd Prize
+        - Elite Program Scholarship 2nd Prize
+        - NAOC Scholarship
+    - year: 2023
       items:
-        - Max Planck Medal
+        - People's Scholarship 1st Prize
+        - Elite Program Scholarship 2nd Prize
+        - Yongman Yang Scholarship
+    
 
 - title: Academic Interests
   type: nested_list
   contents:
-    - title: Topic 1.
-      items:
-        - Description 1.
-        - Description 2.
-    - title: Topic 2.
-      items:
-        - Description 1.
-        - Description 2.
+  - title: Cosmic Rays and Particle Acceleration
+    items: 
+      - gamma-ray astronomy
+      - multi-messenger modeling
+  - title: Plasma Astrophysics
+    items:
+      - Plasma theories
+      - Numerical simulations
+  - title: High Energy Trainsients
+    items: 
+      - phenomenological models
+
+- title: Certifications
+  type: nested_list
+  contents:
+  - title: Language Proficiency
+    items: 
+      - Toefl iBT
+      - DSD Kmk
+
+- title: Skills 
+  type: nested_list
+  contents:
+  - title: Programming Skills
+    items: 
+      - Python, C++, C
+      - \latex, Git, Linux, 
+      - HEASoft, XSPEC, PyTorch
 
 - title: Other Interests
   type: list
   contents:
-    - <u>Hobbies:</u> Hobby 1, Hobby 2, etc.
+    - <b>Hobbies:</b> Cello Playing, Swimming, Cooking.
