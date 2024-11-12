@@ -8,7 +8,7 @@ profile:
   image: myphoto.png
   image_circular: false # crops the image to make it circular
   more_info: >
-    <p>At LHAASO site </p>
+    <p>At the LHAASO site </p>
     <p>Daocheng, Sichuan Province, China</p>
 
 news: false # includes a list of news items
