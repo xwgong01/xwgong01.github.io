@@ -19,7 +19,7 @@ social: false # includes social icons at the bottom of the page
 
 #### Research Interest
 
-I am now an undergraduate student in the fourth year. My research interests are in particle acceleration theories in plasma, their astrophysical application, and modeling with multi-messenger observations. These research topics may help answer the mystery of cosmic ray origin. 
+I am now a fourth-year undergraduate student. My research interests are in particle acceleration theories in plasma, their astrophysical application, and modeling with multi-messenger observations. These research topics may help answer the mystery of cosmic ray origin. 
 
 
 
