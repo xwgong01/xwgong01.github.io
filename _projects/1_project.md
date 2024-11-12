@@ -28,6 +28,7 @@ We then perform a 2d-convolution with the PSF function to the sky map, so that i
 
 
 
+
 <div class="row">
     <div class="col-3 col-md-3">
         {% include figure.liquid loading="eager" path="assets/img/origbkg.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
