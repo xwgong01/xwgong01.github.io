@@ -1,6 +1,6 @@
 ---
 layout: page
-title: A Coincidence Search for IceCube Alerts Clustering
+title: Coincidence Search for IceCube Alerts Clustering
 description: based on Monte-Carlo scramblings
 img: assets/img/AlertsAllSky.png
 importance: 4
@@ -42,18 +42,18 @@ Initial preparatory studies suggest the total number of sources (density of sour
 
 ### Data and Methodology
 #### Dataset
-The IceCat-1 data is Healpix in FITS format with nside = 1024. The pixel value on the map represents the LLH value($-2\log(\mathcal{L})$). We first convert the LLH value to probability by normalizing it to unity. We also consider the signalness $p_{sig}$ of each event and multiply it with the probability, getting the probability distribution of each cosmic alert event. 
+The IceCat-1 data is Healpix in FITS format with nside = 1024. The pixel value on the map represents the LLH value($$-2\log(\mathcal{L})$$). We first convert the LLH value to probability by normalizing it to unity. We also consider the signalness $$p_{sig}$$ of each event and multiply it with the probability, getting the probability distribution of each cosmic alert event. 
 #### Choice of DEC range
 We choose 199 alerts within DEC range (-3,32) out of total 276 alert events from from IceCat-1, in order to have relative high purity of cosmic events. 
 
 #### Statistic
-We adopt the inner product of spatial distributions of two alerts as the pairing rate statistic to describe their overlapping. Given the probability distribution (with consideration of the signalness) $p_i(x), p_j(x)$ for each pixel, where $i,j$ represent two alerts, we regard the two alerts as independent. Then their joint probability is simply $p_{ij} = p_i(x) p_j(x)$. Since we don't know the exact position of the source, we integrate over the overlapping area of two alerts.
+We adopt the inner product of spatial distributions of two alerts as the pairing rate statistic to describe their overlapping. Given the probability distribution (with consideration of the signalness) $$p_i(x), p_j(x)$$ for each pixel, where $$i,j$$ represent two alerts, we regard the two alerts as independent. Then their joint probability is simply $$p_{ij} = p_i(x) p_j(x)$$. Since we don't know the exact position of the source, we integrate over the overlapping area of two alerts.
 
-$
+$$
 \mathrm{PR} = \int_\mathcal{S}p_i(a)p_j(a)\mathrm{d}a = \sum_{k}\frac{p_i(k)p_j(k)}{A_k^2}  A_k
-$
+$$
 
-where S is the overlapping area of two alerts' distribution, k represents pixel id on the discrete sky map, and $A_k$ is the pixel area. To make probability independent upon pixel size, we divide the discrete probability $p(k)$ by $A_k$. Note that in order to keep the probability normalized, i.e. $\sum_ip_i = p_sig$, the Euclidean length of the map vector is not normalized, i.e. $\sum_i p_i^2 \neq 1$ . Thus the inner product is pixel dependent, and we need to manually divide each $p_i$ with pixel area. 
+where S is the overlapping area of two alerts' distribution, k represents pixel id on the discrete sky map, and $$A_k$$ is the pixel area. To make probability independent upon pixel size, we divide the discrete probability $$p(k)$$ by $$A_k$$. Note that in order to keep the probability normalized, i.e. $$\sum_ip_i = p_sig$$, the Euclidean length of the map vector is not normalized, i.e. $$\sum_i p_i^2 \neq 1$$ . Thus the inner product is pixel dependent, and we need to manually divide each $$p_i$$ with pixel area. 
 
 #### Gini Coefficient
 After summing up all alerts, we have a sky map of cumulative probability by all 199 alerts. We further compute Gini coefficient of the map. The Gini coefficient is defined by
@@ -67,10 +67,40 @@ The Gini coefficient reflects whether few pixel points has higher probability co
 
 #### Scrambling Approach
 Since the alerts are declination-dependent, we generate pseudo-experiments by randomizing the right ascension of each alert.  After rotating for a random angle, the sky map is shown in the fig below.
-[[File:Rotmap.png|thumb|The map of alerts, each alert rotated with a random angle in right ascension. The pixel value is logarithm of probability under base 10.]]
 
-On that plot, we select every possible pair of alerts and calculate their inner product. For each scrambling, we record the maximum of the PR value. Then we have the PR distribution under null hypothesis $H_0$, i.e. all alerts are just random fluctuation and no multiplets are associated to singe neutrino source.
+<div class="row justify-content-sm-center">
+    <div class="col-12 col-md-8">
+        {% include figure.liquid loading="eager" path="assets/img/AlertsAllSky.png" title="example image" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+<div class="caption">
+    The map of alerts, each alert rotated with a random angle in right ascension. The pixel value is \(\log_{10}p\), the logarithm of probability.
+</div>
 
-#### Pairing Rate (PR) Statistic Distribution of Signal Hypothesis and Bayesian approach ####
-The signal hypothesis ($H_1$) is that two (or n) alerts are correlated and their distribution overlap. We further perform Monte Carlo to find PR distribution of signal hypothesis by randomly sampling pixels of each alert based on its probability distribution and rotate the map accordingly to align these two points together. Then we calculate the PR value of the doublet. 
-After getting the pdf of $H_0$ and $H_1$ and the unblinded $\mathrm{PR}_{max}$, we can get the Bayesian likelihood ratio of the two hypotheses.
+On that plot, we select every possible pair of alerts and calculate their inner product. For each scrambling, we record the maximum of the PR value. Then we have the PR distribution under null hypothesis $$H_0$$, i.e. all alerts are just random fluctuation and no multiplets are associated to singe neutrino source.
+
+#### Pairing Rate (PR) Statistic Distribution of Signal Hypothesis and Bayesian approach
+The signal hypothesis ($$H_1$$) is that two (or n) alerts are correlated and their distribution overlap. We further perform Monte Carlo to find PR distribution of signal hypothesis by randomly sampling pixels of each alert based on its probability distribution and rotate the map accordingly to align these two points together. Then we calculate the PR value of the doublet. 
+After getting the pdf of $$H_0$$ and $$H_1$$ and the unblinded $$\mathrm{PR}_{max}$$, we can get the Bayesian likelihood ratio of the two hypotheses.
+
+#### Preliminary Results
+
+We performed 20400 scrambles of alerts at (-3,32) in DEC, and 10,000 pseudo-simulation of multiplets in each case with n = 2,3,4. the distribution is shown below.
+
+
+<div class="row justify-content-sm-center">
+    <div class="col-6 col-md-5">
+        {% include figure.liquid loading="eager" path="assets/img/scramble.png" title="example image" class="img-fluid rounded z-depth-1" %}
+    </div>
+     <div class="col-6 col-md-5">
+        {% include figure.liquid loading="eager" path="assets/img/gini.png" title="example image" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+<div class="caption">
+<p>
+Left: Distribution of maximum pairing rate under null hypothesis H0 (Blue) and signal hypothesis (orange and green). The PR distribution is under signal hypothesis of 2 correlated alerts (1 pair, H1) and 3 correlated alerts (3 pairs, H2); The maximum PR distribution of null hypothesis is from 20400 scrambles 
+</p><p>
+Right: Gini coefficinet distribution over 20400 scrambles. The coefficient is very close to 1, since we only select the alerts between (-3,32) in DEC, and most of the pixels in the sky have value 0.</p>
+</div>
+
+(This post is originally published on [IceCube Wiki](https://wiki.icecube.wisc.edu/index.php/AlertsCoincidence))
