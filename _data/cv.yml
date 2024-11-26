@@ -4,7 +4,9 @@
     - name: Full Name
       value: Xingwei Gong
     - name: Pronouns
-      value: He/him
+      value: He/him/his
+    - name:  Email
+      value: 201840319@smail.nju.edu.cn
 
 - title: Education
   type: time_table
@@ -12,37 +14,63 @@
     - title: Bachelor of Science
       institution: Nanjing University, Nanjing, China
       year: 2021-2025
+      description: 
+        - Astronomy
+        - "GPA: 4.51/5.00 (~6%)"
     - title: Visiting Research Student
       institution: Department of Astronomy and Astrophysics, Pennsylvania State University, State College, PA
       year: 02-06/2024
       description: "<b>Supervisor</b>: Prof. Derek B. Fox"
-
+    - title: Non-Degree Coursework
+      institution: Rheinisch-Westfälische Technische Hochschule Aachen
+      year: 10/2020-05/2021
+      description: 
+        - "Business Administration and Engineering: Mechanical Engineering"
+        - "GPA: 1.4 (Scale from 5.0 to 1.0)"
 - title: Research Experience
   type: time_table
   contents:
+    
+
+    
+
+    - title: Development of a Coincidence Searching Method for IceCube Real-Time Alerts
+      institution: Pennsylvania State University
+      year: 04/2024-06/2024
+      description:
+        - "supervised by Prof. Derek B. Fox"
+        - Developed code for Monte-Carlo pseudo experiments.
+        - Edited the AlertsCoincidence page on the IceCube Collaboration Wiki, added method description and preliminary results.
+
+
+    - title: A Proposal for Observing X-ray Broad Absorption Feature in TXS 0506+056 with XRISM
+      institution: Pennsylvania State University
+      year: 02/2024-04/2024
+      description:
+        - "supervised by Prof. Derek B. Fox"
+        - Reviewed findings on ultra-fast outflows and broad absorption features in AGN.
+        - Performed spectrum simulation and jet dilution estimation.
+        - Co-authored an observation proposal for XRISM. 
+
+    - title: Stochastic Acceleration in Gamma-Ray Burst Afterglow
+      institution: Nanjing University
+      year: 2023-2024
+      description:
+        - "supervised by Prof. Ruo-Yu Liu"
+        - Reviewed key findings on stochastic acceleration and quasi-linear theory, adapted the stochastic acceleration model to analyze the electron-proton environment in GRB afterglows.
+        - Developed code for numerical computation; Performed parameter tuning and result analysis.
+        - Authored and presented a poster on the 2nd LHAASO Collaboration Conference in 2024.
+        - "First Author. Manuscript in preparation A Second Relativistic Particle Component in GRB Afterglow: Insights from
+LHAASO’s Observation on GRB 221009A"
+
     - title: Machine Learning 
       institution: Nanjing University
       year: 2022-2024
       description:
-        - "<b>Supervisors</b>:  Prof. Ruo-Yu Liu, Dr. Hai-Ming Zhang"
-
-    - title: Proposal 
-      institution: Pennsylvania State University
-      year: 2024
-      description:
-        - "<b>Supervisor</b>: Prof. Derek B. Fox"
-
-    - title: IceCube Alerts Analysis
-      institution: Pennsylvania State University
-      year: 2024
-      description:
-        - "<b>Supervisor</b>: Prof. Derek B. Fox"
-
-    - title: Stochastic Acceleration in GRB 221009A
-      institution: Nanjing University
-      year: 2023-2024
-      description:
-        - "<b>Supervisor</b>: Prof. Ruo-Yu Liu"
+        - supervised by Prof. Ruo-Yu Liu and Dr. Hai-Ming Zhang
+        - Simulated observed counts map, generated training dataset; Model training, optimization, analysis and data visualization.
+        - Team collaboration and project management, authored project documentation, presentations and reporting.
+        - Co-authored a poster on the 2nd LHAASO Collaboration Conference in 2024.
 
 - title: Honors and Awards
   type: time_table
@@ -57,9 +85,13 @@
         - People's Scholarship 1st Prize
         - Elite Program Scholarship 2nd Prize
         - Yongman Yang Scholarship
+    - year: 2024
+      items: 
+        - People's Scholarship 1st Prize
+        - Elite Program Scholarship 2nd Prize
     
 
-- title: Academic Interests
+- title: Research Interest
   type: nested_list
   contents:
   - title: Cosmic Rays and Particle Acceleration
@@ -79,19 +111,32 @@
   contents:
   - title: Language Proficiency
     items: 
-      - Toefl iBT
-      - DSD Kmk
+      - " TOEFL iBT <br> &nbsp;&nbsp;&nbsp;&nbsp; 28 R30 W28 S25"
+      - "Deutsches Sprachdiplom der Kultusministerkonferenz <br> &nbsp;&nbsp;&nbsp;&nbsp; (German Language Certificate) C1"
 
 - title: Skills 
   type: nested_list
   contents:
   - title: Programming Skills
+
     items: 
       - Python, C++, C
-      - \latex, Git, Linux, 
-      - HEASoft, XSPEC, PyTorch
-
+      
+  - title: Tools
+    items:
+    - "<b>Coding</b>:  PyTorch, Git"
+    - "<b>Observation</b>: HEASoft, XSPEC, Fermi, SAS, IRAF"
+    - "<b>Academic Writing</b>: LaTeX, Markdown"
+  - title: Computing Methods
+    items:
+    - Machine Learning
+    - Numerical Methods (Finite Difference, Monte Carlo, MCMC...)
+    - Parallel programming  with python (multiprocessing)
+  - title: Other Skills
+    items:
+    - Linux Server Maintenance
 - title: Other Interests
   type: list
   contents:
     - <b>Hobbies:</b> Cello Playing, Swimming, Cooking.
+    - 

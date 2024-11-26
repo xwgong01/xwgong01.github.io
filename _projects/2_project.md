@@ -103,4 +103,4 @@ Left: Distribution of maximum pairing rate under null hypothesis H0 (Blue) and s
 Right: Gini coefficinet distribution over 20400 scrambles. The coefficient is very close to 1, since we only select the alerts between (-3,32) in DEC, and most of the pixels in the sky have value 0.</p>
 </div>
 
-(This post is originally published on [IceCube Wiki](https://wiki.icecube.wisc.edu/index.php/AlertsCoincidence))
+(This post is originally contributed to [IceCube Wiki](https://wiki.icecube.wisc.edu/index.php/AlertsCoincidence))
