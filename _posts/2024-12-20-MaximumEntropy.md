@@ -88,4 +88,4 @@ for relativistic and non-relativistic cases respectively. $$\alpha$$ is the part
 
 ### Summary 
 
-In these works, one of the Casimir invariants is considered, which has the same dimension with momentum. This invariant is related to the Gibbs entropy. From the argument that entropy is maximized in a system, this model naturally produces a power-law particle distribution. Because the Casimir momentum is physically meaningful, physical conditions could be roughly estimated for non-thermal particles with given power-law slope. 
+In these works, one of the Casimir invariants is considered, which has the same dimension with momentum. This invariant is related to the Gibbs entropy. From the argument that entropy is maximized in a system, this model naturally produces a power-law particle distribution. Because the Casimir momentum is physically meaningful, physical conditions could be roughly estimated for non-thermal particles with given power-law slope. These results indicate a $$\alpha \to 2$$ after sufficiently long time in the strong turbulence regime with $$\left(\frac{\delta B}{B_0}\right)^2\frac{1}{\beta_c} \gg 1$$. 
