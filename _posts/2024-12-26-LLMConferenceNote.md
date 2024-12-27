@@ -11,7 +11,7 @@ categories: Conference
 
 ## Why LLM? The tasks of LHAASO that asks for AI solutions
 
-1. Background Reduction
+### Background Reduction
   - The gamma-ray background of LHAASO mainly consists of mis-classified cosmic rays. At present, LHAASO Collaboration reduces the background events by setting a threshold. Traditional method needs to perform a multi-dimensional optimization problem for each event in a 5-dimensional parameter space. This is not only time-consuming but also demands lots of computation resource. 
   - For KM2A, distinguishing gamma from protons is easier - gamma-ray air shower events produce mostly electron-positron pairs, while the latter is muon-rich. However, it's not easy to do this on WCDA, a result from the insensitivity for muons. More often, events are categorized by its morphology. Given that proton cascade produce more secondary particles moving in random direction, the cascade is more extended than gamma events. By measuring the dispersion of secondary particles from the core position, both proton and gamma events exhibit Gaussian-like distributions, with larger mean value for protons. Thus by setting a threshold and ignore all of the events with dispersion lareger than the threshold, high classification purity is achieved at the cost of lower selection efficiency. 
   <!-- - Thresh, divergence, core, nhit, direction 5-dimensional analysis -->
@@ -19,15 +19,15 @@ categories: Conference
   <!-- - 提高significance -->
   - The goal of using AI tools is to reduce the cosmic ray background by a factor of 2-5. This might not be a great improvement for bright sources like crab, but for faint targets, i.e. flux equivalent to 0.01 crab, reducing background is of great importance in enhancing significance of detection. 
   
-2. Particle Categorization
+### Particle Categorization
  <!-- 粒子鉴别 -->
   - There are 26 different categories of cosmic ray particles, from H to Fe. Theoretically, these events have different location of cascade maxima, thus could be classified according to observations of WFCTA. This is however almost impossible in practise due to low quality of WFCTA imaging and the influence of cascade location and observation angle. 
   
 
-3. Noise Reduction
+### Noise Reduction
 - Noise is quite common for both ED, MD and WCD. Assuming that secondary particles from a single event arrive at a flat surface in the space of x,y and t, noise outside this surface could be reduced. However, this will certainly exclude some signals, and noise in the surface is not distinguishable.  
 
-4. Event Reconstruction
+### Event Reconstruction
 - Event reconstruction is highly dependent on air shower simulations. Detector array can only do discrete sampling of signals. If AI tools can do some kind of "interpolation" but with prior knowledge from simulations, the reconstruction error will be smaller.
 
 <!-- - 事例重建
@@ -36,7 +36,7 @@ categories: Conference
 - 多源解析
   - 重叠源的分析
   -  -->
-5. Multiple Source Analysis
+### Multiple Source Analysis
 - Near the milky way, source is dense and overlap, posing challenge to source identification. AI tools could help in analysis of source, resolving the contribution from each source. 
 
 <!-- - 多探测器协同重建（km2a+wcda+wfcta）
@@ -88,7 +88,9 @@ $$\log\frac{N_\mu}{N_e^{0.86}}$$
 
  -->
 
-## Zhejiang Lab 大模型在天文学的应用
+<!-- ## Zhejiang Lab 大模型在天文学的应用 -->
+## Zhejiang Lab LLM Application to Astronomy
+
 
 ### 科学模型
 
