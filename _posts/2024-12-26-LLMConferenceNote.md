@@ -1,7 +1,7 @@
 ---
 layout: post
 title: LHAASO - LLM for Astrophsics Seminar Note
-date: 2024-12-20 23:04 +0800
+date: 2024-12-27 00:04 +0800
 description: Recently I attended a meeting of IHEP LHAASO Collaboration and Zhejiang Lab. This is the note taken from the meeting
 tags: ML
 categories: Conference
