@@ -19,3 +19,5 @@ However, it's not the case when extended to 2- or 3-D situations. Since in a mul
 
 The 2-D and 3-D bounded numerical experiment yielded power-law distribution of both slide size and slide lifetime. This will explain the observed 1/f noise, where the power spectrum is $$S(f) \propto f^{-2+\alpha}$$. Here f is the frequency of the noise, and $$\alpha$$ is the power-law slope of the lifetime distribution. 
 
+### Waiting Time Distribution of GRB 221009A VHE Photons
+
