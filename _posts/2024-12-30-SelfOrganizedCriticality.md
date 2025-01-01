@@ -21,3 +21,5 @@ The 2-D and 3-D bounded numerical experiment yielded power-law distribution of b
 
 ### Waiting Time Distribution of GRB 221009A VHE Photons
 
+The distribution of $$dT_n = T_{n+1}-T_n$$ could be fitted with a power-law function with threshold. Also, the difference of $$dT_n$$, i.e. $$x_i = (dT_{i+n}-dT_i)/\sigma_i$$ could be fitted with a Tsallis q-Gaussian function. For different n, the parameter of q-Gaussian function is constant. However, the WTD power-law slope $$\alpha$$ and the q-Gaussian index $$q$$ does not agree with the theoretical relation $$\alpha = 2/(q-1)$$. 
+
