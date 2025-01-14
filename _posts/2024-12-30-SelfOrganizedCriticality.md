@@ -32,3 +32,5 @@ Another example is the black hole accretion disk, where variability timescales a
 The distribution of $$dT_n = T_{n+1}-T_n$$ could be fitted with a power-law function with threshold. Also, the difference of $$dT_n$$, i.e. $$x_i = (dT_{i+n}-dT_i)/\sigma_i$$ could be fitted with a Tsallis q-Gaussian function. For different n, the parameter of q-Gaussian function is constant, revealing some scale invariance. Yet, the WTD power-law slope $$\alpha$$ and the q-Gaussian index $$q$$ does not agree with the theoretical relation $$\alpha = 2/(q-1)$$. As the power-law distribution is indicative of the self-organized criticality, this deviation might due to the lack of independence of photons, according to the authors. 
 
 In a structured jet model, GRB 221009A is thought to have a Poynting-flux-dominated core and a matter-dominated wing. Photons from the core is produced by magnetic dominated processes, which corresponds to some SOC systems. Though the conclusion in this work is not very strong, it provides a new perspective of the holistic characteristics of the system as a supplement to conventional spectral and temporal analysis.
+
+<p align='right'>by Xingwei Gong</p>
