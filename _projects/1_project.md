@@ -2,7 +2,7 @@
 layout: page
 title: Enhance LHAASO Resolution with Machine Learning
 description: De-convolution with neural networks!
-img: assets/img/1849.jpg
+img: assets/img/1849.png
 importance: 3
 category: work
 related_publications: false
@@ -31,13 +31,13 @@ We then perform a 2d-convolution with the PSF function to the sky map, so that i
 
 <div class="row">
     <div class="col-3 col-md-3">
-        {% include figure.liquid loading="eager" path="assets/img/origbkg.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/origbkg.png" title="example image" class="img-fluid rounded z-depth-1" %}
     </div>
     <div class="col-3 col-md-3">
-        {% include figure.liquid loading="eager" path="assets/img/blurbkg.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/blurbkg.png" title="example image" class="img-fluid rounded z-depth-1" %}
     </div>
     <div class="col-6 col-md-6">
-        {% include figure.liquid loading="eager" path="assets/img/poiselect.jpg" title="Fermi Diffuse Gamma-Ray Emission Model" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/poiselect.png" title="Fermi Diffuse Gamma-Ray Emission Model" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
