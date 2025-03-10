@@ -21,6 +21,11 @@ $$
 $$
 
 
+$\begin{equation}
+\frac{\mathrm{d} \hat{p}^{\hat{a}}}{\mathrm{d}\tau} =
+\frac{q}{m} \hat{F}^{\hat{a}} _{\hat{ b}}\hat{p}^{\hat{b}} - \hat{\Gamma}^{\hat{a}}_{\hat{b}\hat{c}}\frac{\hat{p}^{\hat{b}}\hat{p}^{\hat{c}}}{m}
+,\end{equation}$
+
 
 where the first term leads to pitch angle diffusion by electromagnetic field tensor, without changing the particle energy. The second term is the local coordinate, which changes with time and accelerates particle. The quantities with hat represent those in local inertial frame of particle. 
 
@@ -201,10 +206,6 @@ $$
 \end{aligned}
 $$
 
-
-
-
-
 ### Three cases
 
 The exponential function in the integral is 
@@ -249,15 +250,3 @@ $$\frac{\langle \Delta p ^ { 2 } \rangle _ { N }}{2\Delta t} \propto\frac{ p^2 }
 The $$\langle \Delta p ^ { 2 } \rangle _ { 1 }/2\Delta t$$ is dominated by  $$1/t_s^2$$, therefore scales as 
 
 $$\frac{\langle \Delta p ^ { 2 } \rangle _ { 1 }}{2\Delta t} \propto p^2t_s$$
-
-
-### Energy evolution
-
-The evolution in $${\mathcal{R}}_{\not{E}}$$ (the comoving LIF of fluid)
-
-$$\begin{align*}
-\frac{1}{c} \frac{\mathrm{d} \gamma'}{\mathrm{d} \tau} &= - u'^{b} u'^{c} \mathbf{e}^{\beta}_{b} \mathbf{e}^{\gamma}_{c} \frac{\partial}{\partial x^{\gamma}} u_{E \beta} \, , \\
-\frac{1}{c} \frac{\mathrm{d} u_{\parallel}^{\prime}}{\mathrm{d} \tau} &= - u'^{b} u'^{c} \mathbf{e}^{\beta}_{b} \mathbf{e}^{\gamma}_{c} \frac{\partial}{\partial x^{\gamma}} b_{\beta} \, .
-\end{align*}$$
-
-The connection component $$u'^b e^\beta_b$$ converts $$u^\beta$$ in lab frame to $$\hat{u}^{\hat{0}}$$ in comoving LIF, since $$u^b$$ is the component $$\Lambda^b_{\hat{0}}$$. $$b_\beta = B^\mu / \sqrt{B_\alpha B^\alpha}$$ 
