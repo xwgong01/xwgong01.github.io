@@ -265,7 +265,7 @@ The connection component $$u'^b e^\beta_b$$ converts $$u^\beta$$ in lab frame to
 
 ### Acceleration in Shearing Flow
 
-The velocity shear is characterized by $$u^x_{,y}$$, and a y-independent scattering timescale $t_s$.
+The velocity shear is characterized by $$u^x_{,y}$$, and a y-independent scattering timescale $$t_s$$.
 
 The probability density function for the process of interest is given by
 
@@ -273,7 +273,7 @@ $$\begin{equation}
 D_{pp}\xrightarrow{(\Delta t \to \infty)} \frac{1}{2\Delta t} \int d{\tau_1} d{\tau_2} \left\langle \frac{d \hat{p}^0}{d \tau_1} \frac{d \hat{p}^0}{d \tau_2} \right\rangle.
 \end{equation}$$
 
-The nonzero connection terms are $\hat{\Gamma}^0_{\hat{1}\hat{2}} = \hat{\Gamma}^1_{\hat{0}\hat{2}} = u^{x,y}/\gamma_u$. Consequently,
+The nonzero connection terms are $$\hat{\Gamma}^0_{\hat{1}\hat{2}} = \hat{\Gamma}^1_{\hat{0}\hat{2}} = u^{x,y}/\gamma_u$$. Consequently,
 
 $$\left\langle \frac{d \hat{p}^0}{d \tau_1} \frac{d \hat{p}^0}{d \tau_2} \right\rangle = \frac{u^{x,y}(\tau_1) u^{x,y}(\tau_2)}{\gamma_u(\tau_1) \gamma_u(\tau_2)} \times \left\langle \hat{p}^{\hat{1}}(\tau_1) \hat{p}^{\hat{2}}(\tau_1) \hat{p}^{\hat{1}}(\tau_2) \hat{p}^{\hat{2}}(\tau_2) \right\rangle.$$
 
