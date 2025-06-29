@@ -43,20 +43,20 @@ we are able to define $$\mathbf{v} = \nabla U\times \hat{z}$$, with $$B_z U = \p
 
 $$\frac{\partial A_z}{\partial t} + \mathbf{v} \cdot \nabla A_z = B_z \frac{\partial U}{\partial z}$$
 
-Using $$\mathbf{j} = \nabla \times \mathbf{B}$$, the current is 
+Using $$\mathbf{j} = \nabla \times \mathbf{B}$$, and substitute $$\mathbf{B}$$ with $$\nabla A_z \times \hat{z} + B_z\hat{z}$$, the current could be written as  
 
-$$j_z = -\nabla^2 A_z,\ \mathbf{j}_\perp = \nabla B_z \hat{z} + \nabla_\perp \frac{\partial A}{\partial z}$$. Substitute this in the momentum equation, and similar for the induction equation, one can derive the Strauss equations:
+$$j_z = -\nabla^2 A_z,\ \mathbf{j}_\perp = \nabla B_z \times \hat{z} + \nabla_\perp \frac{\partial A}{\partial z}$$. Substitute this in the momentum equation, and similar for the induction equation, one can derive the Strauss equations:
 
 $$\begin{equation}
     \begin{aligned}
         \frac{\partial v}{\partial t} + \mathbf{v}\cdot \nabla_\perp \mathbf{v} = \mathbf{b}\cdot \nabla_\perp \mathbf{b} + B_0 \frac{\partial\mathbf{b}}{\partial z} - \nabla_\perp p + \nu \nabla^2_\perp \mathbf{v},\\
-        \frac{\partial \mathbf{b}}{\partial t} + \mathbf{v}\cdot \nabla_\perp \mathbf{b} = \mathbf{b}\cdot \nabla_\perp \mathbf{v} + B_0 \frac{\partial \mathbf{v}}{\partial z} + \eta \nabla^2\perp \mathbf{b}
+        \frac{\partial \mathbf{b}}{\partial t} + \mathbf{v}\cdot \nabla_\perp \mathbf{b} = \mathbf{b}\cdot \nabla_\perp \mathbf{v} + B_0 \frac{\partial \mathbf{v}}{\partial z} + \eta \nabla^2_\perp \mathbf{b}
     \end{aligned}
 \end{equation}$$
 
 here $$\mathbf{b}$$ is the perturbed magnetic field, $$B_0$$ is the mean field. The terms $$\nabla^2\perp v, \ \nabla^2\perp b$$ are due to viscosity, which does not appear in the original paper of Strauss. 
 
-Using the Elsasser variable $$z^\pm = v \pm b$$, the Strauss equations can further be simplified as 
+Using the Elsasser variable $$z_\perp^\pm = v_\perp \pm b_\perp$$, the Strauss equations can further be simplified as 
 
 $$\partial_t z^\pm _\perp \mp v_A\nabla _\parallel z^\pm _\perp + z^\mp_\perp \cdot \nabla _\perp z^\pm _\perp =  -\nabla_\perp p + \eta \nabla^2_\perp z^\pm _\perp + f^\pm$$
 
