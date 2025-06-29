@@ -54,7 +54,7 @@ $$\begin{equation}
     \end{aligned}
 \end{equation}$$
 
-here $$\mathbf{b}$$ is the perturbed magnetic field, $$B_0$$ is the mean field. The terms $$\nabla^2\perp v, \ \nabla^2\perp b$$ are due to viscosity, which does not appear in the original paper of Strauss. 
+here $$\mathbf{b}$$ is the perturbed magnetic field, $$B_0$$ is the mean field. The terms $$\nabla^2_\perp v, \quad \nabla^2_\perp b$$ are due to viscosity, which does not appear in the original paper of Strauss. 
 
 Using the Elsasser variable $$z_\perp^\pm = v_\perp \pm b_\perp$$, the Strauss equations can further be simplified as 
 
