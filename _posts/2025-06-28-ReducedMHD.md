@@ -25,7 +25,7 @@ where  the viscosity is ignored. Here the total magnetic field $$\mathbf{B} = \m
 
 Since $$k_\parallel \ll k_\perp$$, the variation along z axis is much slower than perpendicular to the magnetic field. Therefore, $$\partial_\perp \sim 1$$ and $$\partial_\parallel \sim \varepsilon$$.
 
-There are also $$B_\perp \sim \varepsilon,\,$$$$ B_\parallel \sim 1+\varepsilon^2, \ $$$$j_\perp \sim \varepsilon^2, \  $$$$j_\parallel \sim \varepsilon, \ $$$$p\sim \varepsilon^2, \ $$$$\rho \sim 1, \ $$$$v\sim \varepsilon, \ $$$$\partial_t \sim \varepsilon$$.
+There are also $$B_\perp \sim \varepsilon,\,$$ $$ B_\parallel \sim 1+\varepsilon^2, \, $$ $$j_\perp \sim \varepsilon^2, \,  $$ $$j_\parallel \sim \varepsilon, \, $$ $$p\sim \varepsilon^2, \, $$ $$\rho \sim 1, \, $$ $$v\sim \varepsilon, \ ,$$ $$\partial_t \sim \varepsilon$$.
 
 If we write the magnetic field as 
 
