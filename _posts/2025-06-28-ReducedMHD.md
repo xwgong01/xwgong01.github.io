@@ -94,9 +94,9 @@ $$\tau^\pm _{nl}\sim \frac{\lambda}{\delta z^\mp_\lambda},$$
 
 and
 
- $$\varepsilon^\pm = \frac{(\delta z^\pm_\lambda)^2}{\tau^\pm _{nl}} \Rightarrow  \delta z^\pm_\lambda = (\tilde{\varepsilon}^\pm \lambda)^{1/3}, \tilde{\varepsilon} \equiv \frac{{\varepsilon^{\pm}}^2}{\varepsilon^\mp}$$. 
+$$\varepsilon^\pm = \frac{(\delta z^\pm_\lambda)^2}{\tau^\pm_{nl}} \Rightarrow  \delta z^\pm_\lambda = (\tilde{\varepsilon}^\pm \lambda)^{1/3}, \tilde{\varepsilon} \equiv \frac{{\varepsilon^{\pm}}^2}{\varepsilon^\mp}.$$
 
- Therefore,
+Therefore,
 
 $$E(k_\perp) \sim( \tilde{\varepsilon}) ^{2/3} k_\perp^{-5/3}$$
 
