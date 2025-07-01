@@ -134,7 +134,7 @@ $$\xi \propto \lambda^{\frac{3}{3+\alpha}},\quad \delta v_\lambda \propto  \lamb
 
 The second and third scaling have used the assumption of static turbulent spectrum, i.e. $$\varepsilon^\pm = \delta v_\lambda^2 / \tau_A = Const.$$, so $$l_\parallel \propto \delta v_\lambda^2 $$. 
 
-GS95 model corresponds to the case $$\alpha = 0$$. To specify $$\alpha$$, we need to choose the $$\alpha$$ that makes $$v$$ and $$b$$ most aligned. The angle between $$v$$ and $$b$$ can be written as $$\phi \sim \sqrt{\theta_\lambda^2 + \tilde{\theta}_\lambda^2}, where $$\theta_\lambda \sim \lambda / \xi$$ is the perpendicular angle, and $$\tilde{\theta}_\lambda \sim \xi / l_\parallel $$ is the angle in vertical plane. 
+GS95 model corresponds to the case $$\alpha = 0$$. To specify $$\alpha$$, we need to choose the $$\alpha$$ that makes $$v$$ and $$b$$ most aligned. The angle between $$v$$ and $$b$$ can be written as $$\phi \sim \sqrt{\theta_\lambda^2 + \tilde{\theta}_\lambda^2}$$, where $$\theta_\lambda \sim \lambda / \xi$$ is the perpendicular angle, and $$\tilde{\theta}_\lambda \sim \xi / l_\parallel $$ is the angle in vertical plane. 
 Limit $$\alpha \to 0$$ leads to large $${\theta}_\lambda$$, while $$\alpha \to \infty $$ leads to large $$\tilde{\theta}_\lambda$$. The value to minimize $$\phi$$ is $$\alpha = 1$$, and therefore 
 
 $$\xi \propto \lambda^{3/4},\quad \delta v_\lambda \propto \lambda^{1/4},\quad l_\parallel \propto \lambda ^{1/2}.$$
