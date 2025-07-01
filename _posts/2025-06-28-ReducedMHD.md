@@ -102,4 +102,52 @@ $$E(k_\perp) \sim( \tilde{\varepsilon}) ^{2/3} k_\perp^{-5/3}$$
 
 and compare these two equations of $$E$$, we have the scale-dependent anisotropy $$k_\parallel \propto k_\perp^{2/3}$$.
 
-Above is the model proposed by [Goldreich & Sridhar 1995](ui.adsabs.harvard.edu/abs/2000PhRvL..85.4656C/abstract), which agrees with the Kolmogorov 5/3 law, but with anisotropic cascade. The GS95 model, however, is based on the overall mean field. The exact treatment should consider the coarse-grained local magnetic field on scale $$\lambda$$. Therefore the anisotropy $$k_\parallel \propto k_\perp^q$$ measured in numerical simulations is between $$q = 2/3$$ and $$q = 1/2$$. 
+Above is the model proposed by [Goldreich & Sridhar 1995](https://ui.adsabs.harvard.edu/abs/2000PhRvL..85.4656C/abstract), which agrees with the Kolmogorov 5/3 law, but with anisotropic cascade. The GS95 model, however, is based on the overall mean field. The exact treatment should consider the coarse-grained local magnetic field on scale $$\lambda$$. Therefore the anisotropy $$k_\parallel \propto k_\perp^q$$ measured in numerical simulations is between $$q = 2/3$$ and $$q = 1/2$$. 
+
+### Boldyrev's Theory, 3D Eddy
+
+[Boldyrev 2006](https://https://arxiv.org/pdf/astro-ph/0511290) proposed a modification to the GS95 model by considering the dynamical alignment effect. The velocity and magnetic fluctuation has two conserved integrals, i.e. the energy integral 
+
+$$E = \int \frac{|v^2 + b^2|}{2} \mathrm{d}V$$
+
+and cross-helicity
+
+$$H = \int |\mathbf{b}\cdot \mathbf{v}| \mathrm{d}V.$$
+
+Without driving force, the former will decay quickly due to viscosity of the plasma (that's what happens by wave cascade), but the latter decays slower because there is no definite direction of decay. Therefore, magnetic and velocity perturbation will eventually tend to be parallel and anti-parallel, i.e. $$\mathbf{b} \sim \pm\mathbf{v}$$. We can write the angle in the horizontal plane (perpendicular to the mean field $$B_0$$) as $$\theta_\lambda$$ on scale $$\lambda$$. The perpendicular scale of the eddy is then the relative separation during the Alfven crossing time, considering the small angle between v and b,  
+
+$$\lambda = \frac{l_\parallel \delta v_\lambda \theta_\lambda}{v_A}$$
+
+and the field line separation is calculated with the full velocity fluctiation $$\delta v_\lambda$$,
+
+$$\xi = \frac{l_\parallel \delta v_\lambda}{v_A}.$$
+
+Then the eddy has a 3-dimensional shape, with parallel scale $$l$$, perpendicular scale $$\lambda$$ and magnetic field separation $$\xi$$, and for small $$\theta_\lambda$$, there is $$l \gg \xi \gg \lambda$$. This is different here from the axis-symmetric eddy in GS95 model, where $$\delta v$$ and $$\delta b$$ are assumed perpendicular to each other, and therefore $$\theta_\lambda = 0$$, $$\xi = \lambda$$. 
+
+For small $$\theta_\lambda$$, the non-linear term in RMHD equation $$z^\mp \cdot \nabla z^\pm$$ is smaller, because one of the $$z$$ is small. Dynamical alignment therefore weakens the nonlinear interaction. Since $$\theta_\lambda$$ is an unknown parameter, the author modeled it with a power-law function of $$\lambda$$, 
+
+$$\theta_\lambda \propto \lambda^{\frac{\alpha}{3+\alpha}},$$
+
+this assumption is equivalent to assuming scale-invariant fluctuation. It's then straightforward to obtain 
+
+$$\xi \propto \lambda^{\frac{3}{3+\alpha}},\quad \delta v_\lambda \propto  \lambda^{\frac{1}{3+\alpha}}, \quad l_\parallel  \propto  \lambda^{\frac{2}{3+\alpha}}.$$
+
+The second and third scaling have used the assumption of static turbulent spectrum, i.e. $$\varepsilon^\pm = \delta v_\lambda^2 / \tau_A = Const.$$, so $$l_\parallel \propto \delta v_\lambda^2 $$. 
+
+GS95 model corresponds to the case $$\alpha = 0$$. To specify $$\alpha$$, we need to choose the $$\alpha$$ that makes $$v$$ and $$b$$ most aligned. The angle between $$v$$ and $$b$$ can be written as $$\phi \sim \sqrt{\theta_\lambda^2 + \tilde{\theta}_\lambda^2}, where $$\theta_\lambda \sim \lambda / \xi$$ is the perpendicular angle, and $$\tilde{\theta}_\lambda \sim \xi / l_\parallel $$ is the angle in vertical plane. 
+Limit $$\alpha \to 0$$ leads to large $${\theta}_\lambda$$, while $$\alpha \to \infty $$ leads to large $$\tilde{\theta}_\lambda$$. The value to minimize $$\phi$$ is $$\alpha = 1$$, and therefore 
+
+$$\xi \propto \lambda^{3/4},\quad \delta v_\lambda \propto \lambda^{1/4},\quad l_\parallel \propto \lambda ^{1/2}.$$
+
+The scaling of $$E(k_\perp)$$ is therefore
+
+
+$$E(k_\perp) \sim \delta v^2 k_\perp \propto k_\perp ^{3/2}.$$
+
+This returns to the Iroshnikov-Kraichnan scaling, except that this is an anisotropic version. 
+
+
+
+
+
+
